@@ -45,7 +45,7 @@ The training dataset is splitted into training and validation dataset in the 80-
 * Training Accuracy = **84.4%**
 * Test Accuracy = **81.3%**
 
-The model is performing well considering the amount of data it is trained upon which reflects a strong potential of estimating the depths of lakes from satellite image alone. However, for testing the model on the glacier lake data collected in the begining, the model must be fine-tuned with glacier lake dataset because although they all are water bodies but the parameters taken into consideration like elevation, thermal bands, etc vary greatly from lakes in plain region to glacier lakes. 
+The model is performing well considering the amount of data it is trained upon which reflects a strong potential of estimating the depths of lakes from satellite data alone. However, for testing the model on the glacier lake data collected in the begining, the model must be fine-tuned with glacier lake dataset because although they all are water bodies but the parameters taken into consideration like elevation, thermal bands, etc vary greatly from lakes in plain region to glacier lakes. 
 
 
 ## Libraries Used
