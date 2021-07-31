@@ -55,6 +55,7 @@ The model is performing well considering the amount of data it is trained upon w
 * [Seaborn](https://seaborn.pydata.org/)
 * [sklearn](https://scikit-learn.org/)
 * [lightgbm](https://lightgbm.readthedocs.io/en/latest/pythonapi/lightgbm.LGBMClassifier.html)
+* [geextract](https://pypi.org/project/geextract/)
 
 
 
