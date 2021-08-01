@@ -30,7 +30,8 @@ The physical characteristics of the lake (Area, Maximum depth, and elevation) is
 
 ### *Data Preprocessing*
 <img align="right" width="150" src="https://earthengine.google.com/static/images/earth-engine-logo.png">
-The extracted data from LAGOS-NE have been further merged with LANDSAT band values. For this purpose, **Google Earth Engine** is used to extract the desired values for given coordinates(latitude, longitude) and time duration which is kept from (April 2013 - April 2014). For the given duration, multiple band values are availble so median of all the values is taken into consideration. After retrieving the LANDSAT bands, the training data consisting of LANDSAT bands, lake elevation and lake area, is scaled.
+
+The extracted data from LAGOS-NE have been further merged with LANDSAT band values. For this purpose **Google Earth Engine** is used to extract the desired values for given coordinates(latitude, longitude) and time duration which is kept from (April 2013 - April 2014). For the given duration, multiple band values are availble so median of all the values is taken into consideration. After retrieving the LANDSAT bands, the training data consisting of LANDSAT bands, lake elevation and lake area, is scaled.
 
 For y labels(supervised learning) the maximum depth is categorized into two classes: 0: 0-15m & 1: >15m. 
 
