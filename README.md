@@ -1,5 +1,7 @@
 # Glacial Lake Depth Classification
 
+## TABLEAU DASHBOARD: [Tableau Public Workbook](https://public.tableau.com/views/LAGOS-NEACaseStudywithTableauVisualizations/Dashboard3?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link)
+
 ## About 
 Lake is any large body of slowly moving or standing water that occupies an inland basin of appreciable size. Glacial lake are formed at relatively higher altitudes when glacier melts down and gets trapped in between boundaries created by dirst, rock and debris called **moraines**. Glacial lake is a topic of extensive research and significance as bursting of these lakes causes floods in the downplain causing havoc. Lakes containing large volumes of water are more susceptible to outburst phenomenon and hence classifying these lakes into **shallow** and **deeper** ones can be used as early warnining.
 
@@ -24,6 +26,7 @@ A Machine learning based classifier has been used for classifying the lake depth
 The glacial lake inventory is very scarce especially the availability of in-situ depth measurements. In our study, we extracted the Bathymetry dataset of the Cordillera Blanca, Peru which is publicly availble and can be accessed from [here](https://onlinelibrary.wiley.com/doi/abs/10.1002/esp.4826). This dataset contains information(coordinates, region, area, elevation, maximum depth, etc.) about 121 glacial lakes in the region. 
 
 The Glacial dataset is not sufficient to train a good ML model. So a different approach has been adopted in the study. The optical characteristics of water bodies as seen from the satellite can be assumed to be same whether it is a glacial or any other lake. So our ML model is trained on LAGOS-NE dataset.
+
 
 ### *Training Dataset*
 The physical characteristics of the lake (Area, Maximum depth, and elevation) is extracted from the LAGOS-NE dataset which can be accessed from CRAN [LAGOSNE](https://cran.r-project.org/web/packages/LAGOSNE/index.html) package. LAGOS-NE contains data for 51 101 lakes and reservoirs larger than 4 ha in 17 lake-rich US states. Out of all the lakes, lakes with available maximum depth were extracted and merged with elevation and lake area data using R. Other features like centroid coordinates (latitude and longitude) were also taken for further use. The lakedepth(maxdepth), latitude(nhd_lat) and longitude is stored in **lakes_limno** table in the database whereas other features can be found in the **locus** table. Each lake is assigned with a specific id called lagoslakeid and has been kept unchanged throughout this analysis for any referencing in future. 
